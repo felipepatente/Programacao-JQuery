@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JQuery Aula45</title>
+		<link href="../jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet">
+		<script type="text/javascript" src="../Biblioteca/jquery-3.1.1.min.js" ></script>
+		<script type="text/javascript" src="../jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+		<style>
+			
+		</style>
+		<script type="text/javascript">
+			//Esse arquivo não funciona pois não tem o plugin
+			$(function(){
+				
+				$("#formulario").validate({
+					message:{
+						email:{
+							required:"Email Obrigatorio",
+							email:"Email Invalido"
+						}
+					}
+				});
+				
+			});
+		</script>
+	</head>
+	<body>
+		
+		<form id="formulario">
+			<fieldset>
+				<div>
+					<label for="nome">Nome</label></br>
+					<input type="text" name="nome" class="required"/>
+				</div>
+				<div>
+					<label for="email">E-mail</label></br>
+					<input type="text" name="email" class="required email"/>
+				</div>
+				<input type="submit" value="Gravar"/>
+			</fieldset>
+		</form>
+		
+	</body>
+<html>

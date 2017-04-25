@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JQuery Aula01</title>
+		<script type="text/javascript" src="Biblioteca/jquery-3.1.1.min.js" ></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("a").click(function(){
+					$('#titulo')
+					.css("color","#0000FF")
+					.text("Curso e JQuery")
+					.hide()
+					.fadeToggle();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1 id="titulo">Hello World</h1>
+		<a href="#">Executar JavaScript</a><br/>
+		<a href="#">Executar Dois</a><br/>
+		<a href="#">Executar Outro</a>
+	</body>
+<html>

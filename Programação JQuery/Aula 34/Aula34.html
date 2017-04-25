@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JQuery Aula34</title>
+		<link href="../jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet">
+		<script type="text/javascript" src="../Biblioteca/jquery-3.1.1.min.js" ></script>
+		<script type="text/javascript" src="../jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				
+				$("a").button({
+					icons: {primary:"ui-icon-tag"},
+					text:false
+				});
+				
+				$("#checks").buttonset();
+				$("#radios").buttonset();
+				
+			});
+		</script>
+	</head>
+	<body>
+		
+		<a href="#">Botao A</a></br>
+		
+		<div id="checks">
+			<input type="checkbox" id="check1"/><label for="check1">X</label>
+			<input type="checkbox" id="check2"/><label for="check2">T</label>
+			<input type="checkbox" id="check3"/><label for="check3">I</label>
+		</div></br>
+		
+		<div id="radios">
+			<input type="radio" id="radio1"/><label for="radio1">Homem</label>
+			<input type="radio" id="radio2"/><label for="radio2">Mulher</label>
+		</div>
+	</body>
+<html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JQuery Aula53</title>
+		<link href="../jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet">
+		<script type="text/javascript" src="../Biblioteca/jquery-3.1.1.min.js" ></script>
+		<script type="text/javascript" src="../jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+		<style>
+			
+		</style>
+		<script type="text/javascript">
+			
+			$(function(){
+				$("#botao").click(function(){
+					
+					$.ajax({
+						type: "GET",
+						url: "arquivo.html",
+						dataType: "html",
+						success: function(resultado){
+							alert(resultado);
+						}
+					});
+					
+					return false;
+				});
+			});
+		</script>
+	</head>
+	<body>
+		
+		<a type="button" value="Ajax" id="botao"/>
+		
+	</body>
+<html>

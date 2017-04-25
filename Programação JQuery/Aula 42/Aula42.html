@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JQuery Aula42</title>
+		<link href="../jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet">
+		<script type="text/javascript" src="../Biblioteca/jquery-3.1.1.min.js" ></script>
+		<script type="text/javascript" src="../jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+		<style>
+			#slider{
+				margin:50px;
+			}
+		</style>
+		<script type="text/javascript">
+			$(function(){
+				
+				$("#slider").slider({
+					min:10,
+					max:100,
+					value:60,
+					orientation:"vertical",
+					slide:function(event,ui){
+						$("#valor").val(ui.value);
+					}
+				});
+				
+			});
+		</script>
+	</head>
+	<body>
+		
+		<div id="slider"></div>
+		valor: <input type="text" id="valor"/>
+		
+	</body>
+<html>

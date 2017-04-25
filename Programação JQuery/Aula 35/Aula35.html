@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JQuery Aula35</title>
+		<link href="../jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet">
+		<script type="text/javascript" src="../Biblioteca/jquery-3.1.1.min.js" ></script>
+		<script type="text/javascript" src="../jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				/*
+				$("#date").datepicker({
+					showOn:"button",
+					buttonImage:"calendario.jpg",
+					buttonImageOnly: true
+				});
+				*/
+				
+				$("#date").datepicker($.datepicker.regional["pt-BR"]);
+				
+			});
+		</script>
+	</head>
+	<body>
+		<p>Date: <input type="text" id="date"/></p>
+	</body>
+<html>
